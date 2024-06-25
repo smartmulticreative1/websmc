@@ -1,0 +1,37 @@
+.btn-smc{display: inline-flex;}
+.btn-smc span{
+    display: inline-flex;
+    height: 3rem;
+    min-height: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    flex-shrink: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1em;
+    gap: 0.5rem;
+    text-decoration-line: none;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    text-wrap: nowrap;
+}
+.btn-primary-smc{
+    color: #000;
+    border-top:2px solid #000;
+    border-left:2px solid #000;
+    border-right:5px solid #000;
+    border-bottom:7px solid #000;
+    border-radius:5px;
+    background-color: #000;
+}
+.btn-primary-smc span{background-color: #FCCF08;}
+.btn-primary-smc-white span{background-color: #fff;}

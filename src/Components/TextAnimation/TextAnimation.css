@@ -1,0 +1,32 @@
+
+.animation-text-box-1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    color: #000;
+    font-weight: 600;
+  }
+  .animation-text-box-1 svg{color: #144688;}
+
+  .animation-text-box-2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: #144688;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    color: #fff;
+    font-weight: 600;
+  }
+  .animation-text-box-2 svg{color: #fff;}
+  .mr-active{transition: all 1s linear;}
+  .mr-unactive{transition: all 1s linear allow-discrete; transform: translateX(0%) !important;}
