@@ -11,11 +11,11 @@ const Navbar = ({ns}) => {
         {name:'Our Capabilities', path:'/our-capabilities'},
         {name:'Our Craft', path:'/our-craft'},
         {name:'Our Works', path:'/our-works'},
-        // {name:'Resource', path:'/resource'}
+        {name:'Resource', path:'/resource'}
         // {name:'Our Capabilities', path:'/#'},
         // {name:'Our Craft', path:'/#'},
         // {name:'Our Works', path:'/#'},
-        {name:'Resource', path:'/#'}
+        //{name:'Resource', path:'/#'}
     ];
 
     const nv1= 
