@@ -189,7 +189,7 @@ function Home() {
             <h3 className='text-color-alternate text-[2rem]'>Our lastest work</h3>
             <div className="our-work-start_desk flex flex-col md:flex-row gap-[2.5rem]">
               <CardCover selectCard="cc3" bg="bg-[white]">
-                <p className='text-black font-bold text-[0.75rem] w-full max-w-[31.875rem]'>Business challenges are tough, but we will be committed to helping you find themthe best technology solutions for their business growth</p>
+                <p className='text-black font-bold leading-4 text-[0.75rem] w-full max-w-[31.875rem]'>Business challenges are tough, but we will be committed to helping you find themthe best technology solutions for their business growth</p>
               </CardCover>
               <div className="block"><Button btn="btn1" to='#' className='btn-primary-smc'>RECENT WORKS</Button></div>
             </div>
