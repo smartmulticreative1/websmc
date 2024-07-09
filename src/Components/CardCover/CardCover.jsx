@@ -4,7 +4,7 @@ import './CardCover.css';
 function CardCover({selectCard,bg,children,titleCard,textImg}) {
   const cc1=
     <div className="card-cover">
-      <div className="rounded-[5px] xl:shadow-[20px_20px_0px_0px_rgba(0,0,0,1)]">
+      <div className="rounded-[5px] xl:shadow-[20px_20px_0px_0px_rgba(0,0,0,1)] transition-shadow hover:shadow-[20px_20px_0px_0px_rgba(0,0,0,1)]">
         <div className={`${bg} rounded-[5px] border-[5px] border-black solid`}>
           <div className="card-topbar bg-[#144688] mb-3">
             <div className="circle flex flex-none">
@@ -30,7 +30,7 @@ function CardCover({selectCard,bg,children,titleCard,textImg}) {
   const cc3=
     <div className="card-cover">
       <div className="rounded-[5px] shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]">
-        <div className={`${bg} rounded-[5px] p-[22px_28px]`}>
+        <div className={`${bg} rounded-[5px] p-[1.375rem_1.75rem]`}>
           {children}
         </div>
       </div>
@@ -58,7 +58,7 @@ function CardCover({selectCard,bg,children,titleCard,textImg}) {
   <div className={`${bg} relative w-full h-full z-10 border-[2px] solid border-black rounded-[5px]`}>
     {children}
   </div>
-  <div className="bg-[#FFDD60] absolute w-[90%] h-full right-[-0.3rem] top-[0.3rem] border-[2px] solid border-black rounded-[5px]"></div>
+  <div className="bg-[#FFDD60] absolute w-[90%] h-full right-[-0.688rem] top-[0.688rem] border-[2px] solid border-black rounded-[5px]"></div>
 </div>
   ;
   const cc7=

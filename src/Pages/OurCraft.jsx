@@ -18,10 +18,8 @@ import Label from '../Components/Label/Label'
 function OurCraft() {
   const listText=[
     {text:'You can try and use our craft anytime'},
-    {text:'You can try and use our craft anytime'},
-    {text:'You can try and use our craft anytime'},
-    {text:'You can try and use our craft anytime'},
-    {text:'You can try and use our craft anytime'}
+    {text:'There are various crafts that we have that you can use'},
+    {text:'Use our craft for free'}
 ];
   return (
     <>

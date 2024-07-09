@@ -5,8 +5,14 @@ import CardCover from '../CardCover/CardCover';
 
 function Button({btn,children,to,className,sicon}) {
 
-  const btn1=<Link to={to} className={`btn-smc ${className}`}>
+  const btnNon=<div className={`btn-smc ${className}`}>
   <span>
+      {children}
+  </span>
+  </div>
+  ;
+  const btn1=<Link to={to} className={`btn-smc sm:h-auto h-[2.5rem] ${className}`}>
+  <span className='sm:px-[0.938rem] sm:py-[0.688rem] px-[0.438rem] sm:text-[1.25rem] text-[0.75rem]'>
       {children}
   </span>
   </Link>
@@ -23,12 +29,15 @@ function Button({btn,children,to,className,sicon}) {
   </Link>
   ;
   const btn4=<Link to={to} className={`btn-smc ${className} flex flex-nowrap gap-4`}>
-     <CardCover selectCard='cc6' bg="bg-[#144688] py-2 px-8">{children}</CardCover>
+     <CardCover selectCard='cc6' bg="bg-[#144688] p-[0.625rem] text-[1.25rem] font-bold">{children}</CardCover>
   </Link>
   ;
   
   let btns;
 
+  if (btn === 'btnNon') {
+    btns=btnNon;
+  } else
   if (btn === 'btn1') {
     btns=btn1;
   } else if (btn === 'btn2'){

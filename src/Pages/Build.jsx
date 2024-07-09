@@ -1,40 +1,33 @@
-import {useState} from 'react'
+import React, { useState } from 'react'
 import Navbar from '../Components/Navbar/Navbar'
+import starHeroSvg from '../assets/images/star.svg'
+import arrowHeroSvg1 from '../assets/images/arrow-1.svg'
+import arrowHeroSvg2 from '../assets/images/arrow-2.svg'
+import imgMeet from '../assets/images/meet.svg'
+import whatTxt from '../assets/images/what-text.svg'
+import devCard from '../assets/images/dev-card.svg'
+import digCard from '../assets/images/dig-card.svg'
+import hpDig from '../assets/images/hp-dig.svg'
+import work1 from '../assets/images/work-1.svg'
 import Button from '../Components/Button/Button'
-import starHeroSvg from '../assets/img/star.svg'
-import arrowHeroSvg1 from '../assets/img/arrow-1.svg'
-import arrowHeroSvg2 from '../assets/img/arrow-2.svg'
-import whatTxt from '../assets/img/what-text.svg'
-import work1 from '../assets/img/work-1.svg'
-import imgMeet from '../assets/img/meet.svg'
-import quoteIcon from '../assets/img/quote-icon.svg'
-import human from '../assets/img/human.png'
-import starTesti from '../assets/img/star-testi.svg'
-import devCard from '../assets/img/dev-card.svg'
-import digCard from '../assets/img/dig-card.svg'
-import hpDig from '../assets/img/hp-dig.svg'
 import TextAnimation from '../Components/TextAnimation/TextAnimation'
-import {Helmet, HelmetProvider } from 'react-helmet-async'
 import CardCover from '../Components/CardCover/CardCover'
 import Carousel from '../Components/Carousel/Carousel'
-import Footer from '../Components/Footer/Footer'
-import Discus from '../Components/Discus/Discus'
 
-
-function Home() {
-    const listText=[
-        {text:'Web Developer'},
-        {text:'Mobile App Development'},
-        {text:'UI Design'},
-        {text:'3D Design'},
-        {text:'Digital Content'}
+function Build() {
+  const listText=[
+    {text:'Web Developer'},
+    {text:'Mobile App Development'},
+    {text:'UI Design'},
+    {text:'3D Design'},
+    {text:'Digital Content'}
     ];
     const listText2=[
-        {text:'Our Work'},
-        {text:'Our Work'},
-        {text:'Our Work'},
-        {text:'Our Work'},
-        {text:'Our Work'}
+      {text:'Our Work'},
+      {text:'Our Work'},
+      {text:'Our Work'},
+      {text:'Our Work'},
+      {text:'Our Work'}
     ];
     const [cardAnim1, setIsCardAnim1] = useState(false);
     const [cardAnim2, setIsCardAnim2] = useState(false);
@@ -45,18 +38,11 @@ function Home() {
     const toggleCardAnim2 = () => {
         setIsCardAnim2(!cardAnim2);
     };
+
   return (
     <>
+      <Navbar ns="nv1"/>
 
-    <HelmetProvider>
-        <Helmet>
-            <title>SMC</title>
-        </Helmet>
-    </HelmetProvider>
-
-
-        <Navbar ns='nv1'/>
-        
      <section className="section-home_header w-full background-primary xl:px-0 px-4 xl:bg-[url('./assets/images/bg-header_home.svg')] bg-cover bg-no-repeat lg:bg-center 2xl:bg-top">
         <div className="xl:container mx-auto">
           <div className="home-header-content_wrapper xl:pt-[3.125rem] xl:pb-[5.25rem] xl:ps-[4.375rem] overflow-hidden">
@@ -223,91 +209,8 @@ function Home() {
       </div>
      </section>
 
-        {/* testimonial */}
-        <div id="section-testimonial">
-            <div className="xl:container mx-auto xl:px-[4.3rem] px-[1rem] py-[50px] text-black">
-                <div className="grid grid-cols-1">
-                    <div className="title-section-testimoni text-center">
-                        <span className='pb-4 text-[20px]'>Testimonial</span>
-                        <h3 className='mb-10'>What our clients love in working with us</h3>
-                    </div>
-                    <div className="testimonial mb-20 grid grid-rows-3 gap-10">
-                        <CardCover selectCard='cc4'>
-                            <div className="card-testimonial flex flex-col">
-                                <div className="icon-quote mb-10"><img src={quoteIcon} alt="" /></div>
-                                <p className=' font-bold mb-4'>“Smart Multi Creative is very organized and very easy to work with and very friendly so it is easy to understand. very easy and fast steps in the work stage.”</p>
-                                <div className="footer-testimonial flex sm:justify-between justify-center flex-wrap gap-4">
-                                    <div className="client-testimonial flex flex-nowrap gap-1 max-w-[300]">
-                                        <div className="client-testimonial-img w-[50px] h-[50px] overflow-hidden"><img src={human} alt="" className='w-[50px] h-[50px]' /></div>
-                                        <div className="client-testimonial-detail flex flex-col">
-                                            <h6 className='m-0'>Marc Andre</h6>
-                                            <span className='text-gray-400 text-[12px]'>CEO WARUNG PINTAR</span>
-                                        </div>
-                                    </div>
-                                    <div className="client-feedback flex flex-nowrap items-center max-w-[300px]">
-                                        <h4 className="m-0 me-4">5.0</h4>
-                                        <div className="star-point flex flex-nowrap items-center">
-                                            <img src={starTesti} alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </CardCover>
-                        <CardCover selectCard='cc4'>
-                            <div className="card-testimonial flex flex-col">
-                                <div className="icon-quote mb-10"><img src={quoteIcon} alt="" /></div>
-                                <p className=' font-bold mb-4'>“Smart Multi Creative is very organized and very easy to work with and very friendly so it is easy to understand. very easy and fast steps in the work stage.”</p>
-                                <div className="footer-testimonial flex sm:justify-between justify-center flex-wrap gap-4">
-                                    <div className="client-testimonial flex flex-nowrap gap-1 max-w-[300]">
-                                        <div className="client-testimonial-img w-[50px] h-[50px] overflow-hidden"><img src={human} alt="" className='w-[50px] h-[50px]' /></div>
-                                        <div className="client-testimonial-detail flex flex-col">
-                                            <h6 className='m-0'>Marc Andre</h6>
-                                            <span className='text-gray-400 text-[12px]'>CEO WARUNG PINTAR</span>
-                                        </div>
-                                    </div>
-                                    <div className="client-feedback flex flex-nowrap items-center max-w-[300px]">
-                                        <h4 className="m-0 me-4">5.0</h4>
-                                        <div className="star-point flex flex-nowrap items-center">
-                                            <img src={starTesti} alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </CardCover>
-                        <CardCover selectCard='cc4'>
-                            <div className="card-testimonial flex flex-col">
-                                <div className="icon-quote mb-10"><img src={quoteIcon} alt="" /></div>
-                                <p className=' font-bold mb-4'>“Smart Multi Creative is very organized and very easy to work with and very friendly so it is easy to understand. very easy and fast steps in the work stage.”</p>
-                                <div className="footer-testimonial flex sm:justify-between justify-center flex-wrap gap-4">
-                                    <div className="client-testimonial flex flex-nowrap gap-1 max-w-[300]">
-                                        <div className="client-testimonial-img w-[50px] h-[50px] overflow-hidden"><img src={human} alt="" className='w-[50px] h-[50px]' /></div>
-                                        <div className="client-testimonial-detail flex flex-col">
-                                            <h6 className='m-0'>Marc Andre</h6>
-                                            <span className='text-gray-400 text-[12px]'>CEO WARUNG PINTAR</span>
-                                        </div>
-                                    </div>
-                                    <div className="client-feedback flex flex-nowrap items-center max-w-[300px]">
-                                        <h4 className="m-0 me-4">5.0</h4>
-                                        <div className="star-point flex flex-nowrap items-center">
-                                            <img src={starTesti} alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </CardCover>
-                    </div>
-                    <div className="cta-testimonial flex flex-nowrap justify-center">
-                        <Button btn="btn1" to='#' className='btn-primary-smc'>show more review</Button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <Discus/>
-        <Footer/>
-
     </>
   )
 }
 
-export default Home
+export default Build

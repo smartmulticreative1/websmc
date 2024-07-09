@@ -84,8 +84,8 @@ const showMenu2 = () => {
      {/* section works */}
      {/* section our capabilities */}
      <div className="xl:px-[4.3rem] px-[1rem] py-[50px] mx-auto xl:container" id="section-our-capabilities">
-          <div className="grid lg:grid-cols-[30%_70%] grid-rows-1 gap-10">
-            <div className="works-left">
+          <div className="flex flex-col lg:flex-row gap-10">
+            <div className="works-left min-w-[20rem]">
               <CardCover selectCard='cc4'>
                   <div className="text-black flex flex-col gap-4">
                     <h4 className='m-0'>Work</h4>
@@ -136,7 +136,7 @@ const showMenu2 = () => {
                   <p className='text-[white] text-[12px] font-bold text-end'>We have worked on more than 100 projects from various business fields that we have completed.</p>
                 </CardCover>
               </div>
-              <div className="card-works-box grid grid-cols-2 gap-7">
+              <div className="card-works-box grid grid-cols-1 sm:grid-cols-2 gap-7">
                 <div className="card-works-wrapper xl:scale-90 scale-95">
                 <CardCover selectCard="cc7" bg="bg-[#144688]">
                   <div className="flex flex-col relative">

@@ -2,28 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-/* @font-face {
+/* setup */
+@font-face {
   font-family: 'IBM Plex Sans Condensed';
-  src: url('./assets/font/IBMPlexSansCondensed-Regular.ttf');
-} */
-/* @font-face {
+  src: local('IBM Plex Sans Condensed'), url('../src/assets/font/IBMPlexSansCondensed-Regular.ttf') format('ttf');
+}
+@font-face {
   font-family: 'Open Sans';
-  src: url('./assets/font/OpenSans-Regular.ttf');
-} */
+  src: local('Open Sans'), url('../src/assets/font/OpenSans-Regular.ttf') format('ttf');
+}
+
+body{color:#fff; scroll-behavior: smooth; font-family:'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;background-color: #fff;}
+
+/* typography */
 
 h1{
-  font-family: 'IBM Plex Sans Condensed', sans-serif !important;
+  /* font-family: 'IBM Plex Sans Condensed' !important; */
   font-size: 6.25rem;
+  font-weight: 600;
+  line-height: normal;
 }
-body{scroll-behavior: smooth; font-family: 'Open Sans', sans-serif !important; color: #fff; background-color: #fff;}
-h2{font-size: 4.5rem;}
-h3{font-size: 2.5rem;}
-h4{font-size: 1.25rem;}
-h5{font-size: 1rem;}
-h1,h2,h3,h4,h5,h6{font-weight: bold; margin-bottom: 1rem;}
-h6,p,span,i,li,a{font-size: 1rem;}
+h2{
+  font-size: 4.5rem;
+  font-weight: 600;
+  line-height: normal;
+}
+h3{
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: normal;
+}
+h4{
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: normal;
+}
+h5{
+  font-weight: 600;
+  line-height: normal;
+}
+h6{
+  font-weight: 600;
+  line-height: normal;
+}
+p,span,i,li,a{
+  font-weight: normal;
+  line-height: 1.688rem;
+}
+a:hover{color: #00173f;}
+/* color */
+.text-color-primary{color:#144688;}
+.text-color-alternate{color:#fff;}
+
+/* background */
+.background-primary{background-color: #144688;}
+.background-secondary{background-color: #FCCF08;}
+.background-tertiary{background-color: #ffdd60;}
+
 .smc-px{padding: 0 4.3rem;}
 
 .bg-smc-1{background-color: #144688;}
@@ -43,18 +78,22 @@ h6,p,span,i,li,a{font-size: 1rem;}
 .card-anim-active .btn-left-wrapper{
   left: 0;
   transition: all 1s linear;
+  opacity: 0;
 }
 .card-anim-active .btn-right-wrapper{
   right: 0;
   transition: all 1s linear;
+  opacity: 0;
 }
 .card-anim-active:hover .btn-left-wrapper{
   left: -30%;
   transition: all 1s linear;
+  opacity: 1;
 }
 .card-anim-active:hover .btn-right-wrapper{
   right: -30%;
   transition: all 1s linear;
+  opacity: 1;
 }
 
 /* ourworks */
@@ -68,64 +107,6 @@ h6,p,span,i,li,a{font-size: 1rem;}
   transform: rotate(0deg);
 }
 
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+/* hover nav */
+.hover\:bg-inherit:hover{background-color: unset !important;}
+:where(.menu li:not(.menu-title, .disabled) > :not(ul, details, .menu-title)):not(summary, .active, .btn).focus, :where(.menu li:not(.menu-title, .disabled) > :not(ul, details, .menu-title)):not(summary, .active, .btn):focus, :where(.menu li:not(.menu-title, .disabled) > :not(ul, details, .menu-title)):is(summary):not(.active, .btn):focus-visible, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(summary, .active, .btn).focus, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(summary, .active, .btn):focus, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):is(summary):not(.active, .btn):focus-visible{background-color: unset !important;}

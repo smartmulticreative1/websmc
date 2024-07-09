@@ -36,15 +36,15 @@ function OurCapabilities() {
 
       {/* header */}
 
-      <div id="header-our-capabilities" className="relative bg-smc-1 lg:bg-[url('./assets/img/bg-our-capabilities.svg')] bg-cover bg-no-repeat">
+      <div id="header-our-capabilities" className="relative bg-smc-1 lg:bg-right lg:bg-[url('./assets/img/bg-our-capabilities.svg')] bg-cover bg-no-repeat">
             
             {/* Hero Section */}
             <div className="lg:min-h-[800px] xl:px-[4.3rem] px-[1rem] py-[50px] mx-auto xl:container" id="section-hero-our-capabilities">
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 text-center lg:text-start">
                     <h2 className='text-[1.8rem] sm:text-[4.5rem] relative'>
                       Guaranteed <br /> <span className='text-[1.8rem] sm:text-[4.5rem] relative after:absolute after:w-full sm:after:h-[10px] after:h-[5px] after:bg-[white] after:rounded-[100px] after:content-[""] after:left-0 after:bottom-[-.3rem] sm:after:bottom-[-.8rem]'>ability</span> with <br /> <span className='text-[1.8rem] sm:text-[4.5rem] relative after:absolute after:w-full sm:after:h-[10px] after:h-[5px] after:bg-[white] after:rounded-[100px] after:content-[""] after:left-0 after:bottom-[-.3rem] sm:after:bottom-[-.8rem]'>experienced</span> people
                     </h2>
-                    <p className='w-full max-w-[569px] font-bold mb-10'>We will help you find solutions to your problems. We have years of experience in the IT and branding industry.</p>
+                    <p className='w-full lg:max-w-[569px] font-bold mb-10'>We will help you find solutions to your problems. We have years of experience in the IT and branding industry.</p>
                 </div>
             </div>
 

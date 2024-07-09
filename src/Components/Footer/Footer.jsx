@@ -39,7 +39,7 @@ function Footer() {
                                 <h6>FIND US</h6>
                                 <div className="menu-footer-link-wrapper flex flex-col gap-3">
                                     <a href="#" className="link-menu-footer font-bold">South Jakarta, Indonesia</a>
-                                    <a href="#" className="link-menu-footer font-bold"><div className='flex flex-nowrap'><img src={mapIcon} alt="" className='me-3' /><span>View On Map</span></div></a>
+                                    <a href="#" className="link-menu-footer font-bold"><div className='flex flex-nowrap justify-center sm:justify-start'><img src={mapIcon} alt="" className='me-3' /><span>View On Map</span></div></a>
                                 </div>
                             </div>
                         </div>

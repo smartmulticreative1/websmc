@@ -5,6 +5,19 @@ import "slick-carousel/slick/slick-theme.css";
 import prevImg from '../../assets/img/btn-prev.svg';
 import nextImg from '../../assets/img/btn-next.svg';
 
+// swiperjs
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+
+// Import required modules
+import { Navigation } from 'swiper/modules';
+
+
 const Carousel = ({cs, children, cls}) => {
 
   const CustomPrevArrow = (props) => {
@@ -85,12 +98,38 @@ const CustomNextArrow = (props) => {
   </Slider>
   </div>;
 
+  const cwork= <>
+  <Swiper
+  navigation={{
+    nextEl: '.custom-next',
+    prevEl: '.custom-prev',
+  }}
+  modules={[Navigation]}
+  loop={true}
+  className="mySwiper xl:w-[85%] w-full md:min-h-[34.188rem]"
+>
+{React.Children.map(children, (child, index) => (
+        <SwiperSlide key={index}>{child}</SwiperSlide>
+      ))}
+    </Swiper>
+  <div className="custom-navigation xl:px-4 px-0 w-full h-0 flex gap-[1rem] lg:justify-between justify-center lg:translate-y-[-20rem]">
+    <div className="custom-prev">
+      <img src={prevImg} alt="Previous" />
+    </div>
+    <div className="custom-next">
+      <img src={nextImg} alt="Next" />
+    </div>
+  </div>
+  </>;
+
   let n;
 
         if (cs === 'c1') {
             n=c1;
         }else if (cs === 'c2') {
           n=c2;
+        }else if (cs === 'cwork') {
+          n=cwork;
         }
 
   return (
