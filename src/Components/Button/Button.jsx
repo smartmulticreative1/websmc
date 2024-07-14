@@ -18,14 +18,14 @@ function Button({btn,children,to,className,sicon}) {
   </Link>
   ;
   const btn2=<button type="submit" className={`btn-smc ${className}`}>
-  <span>
+  <span className='py-[0.688rem] px-[0.938rem] flex gap-[0.938rem]'>
       {children}
   </span>
   </button>
   ;
   const btn3=<Link to={to} className={`btn-smc ${className} flex flex-nowrap gap-4 hover:scale-90 transition-all`}>
-     <CardCover selectCard='cc6' bg="bg-[#144688] p-2 flex item-center"><img src={sicon} alt="" /></CardCover>
-     <CardCover selectCard='cc6' bg="bg-[#144688] py-2 px-8">{children}</CardCover>
+     <CardCover selectCard='cc11' bg="bg-[#144688] h-[2rem] w-[2rem] flex item-center"><img src={sicon} className='w-[1rem] m-auto' alt="" /></CardCover>
+     <CardCover selectCard='cc11' bg="bg-[#144688] h-[2rem] px-[1.5rem]">{children}</CardCover>
   </Link>
   ;
   const btn4=<Link to={to} className={`btn-smc ${className} flex flex-nowrap gap-4`}>

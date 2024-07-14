@@ -14,8 +14,8 @@ function Footer() {
       {/* footer */}
       <div id="section-footer">
             <div className="xl:container mx-auto xl:px-[4.3rem] px-[1rem] py-[50px]">
-                <div className="grid grid-cols-1">
-                    <div className="nav-footer flex lg:flex-nowrap flex-wrap lg:gap-0 gap-10 justify-between text-black border-black solid border-b-2 pb-10">
+                <div className="flex flex-col gap-[3.25rem]">
+                    <div className="nav-footer flex lg:flex-nowrap flex-wrap lg:gap-0 gap-10 justify-between text-black border-black solid border-b-2 pb-[3.25rem]">
                         <div className="brand-footer lg:mx-0 mx-auto"><img src={LogoFooter} alt="" /></div>
                         <div className="menu-footer wrapper flex flex-wrap lg:justify-end gap-10 w-full">
                             <div className="menu-footer lg:mx-0 mx-auto md:text-start text-center flex flex-col">
@@ -44,11 +44,11 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className="sosmed flex lg:flex-row flex-col gap-4 items-center justify-center py-[50px]">
-                        <Button btn="btn3" to='#' className='mx-4' sicon={git}>Git Hub</Button>
-                        <Button btn="btn3" to='#' className='mx-4' sicon={drib}>Dribble</Button>
-                        <Button btn="btn3" to='#' className='mx-4' sicon={linked}>LinkedIn</Button>
-                        <Button btn="btn3" to='#' className='mx-4' sicon={ig}>Instagram</Button>
+                    <div className="sosmed flex lg:flex-row flex-col gap-4 items-center justify-center text-color-alternate">
+                        <Button btn="btn3" to='#' sicon={git}>Git Hub</Button>
+                        <Button btn="btn3" to='#' sicon={drib}>Dribble</Button>
+                        <Button btn="btn3" to='#' sicon={linked}>LinkedIn</Button>
+                        <Button btn="btn3" to='#' sicon={ig}>Instagram</Button>
                     </div>
                     <div className="copy text-center text-black"><h5>@Copyright 2024. PT Inovasi Teknologi Nusantara</h5></div>
                 </div>

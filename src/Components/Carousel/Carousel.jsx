@@ -113,10 +113,10 @@ const CustomNextArrow = (props) => {
       ))}
     </Swiper>
   <div className="custom-navigation xl:px-4 px-0 w-full h-0 flex gap-[1rem] lg:justify-between justify-center lg:translate-y-[-20rem]">
-    <div className="custom-prev">
+    <div className="cursor-pointer custom-prev">
       <img src={prevImg} alt="Previous" />
     </div>
-    <div className="custom-next">
+    <div className="cursor-pointer custom-next">
       <img src={nextImg} alt="Next" />
     </div>
   </div>
