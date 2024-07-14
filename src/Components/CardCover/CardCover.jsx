@@ -111,7 +111,7 @@ function CardCover({selectCard,bg,children,titleCard,textImg}) {
 
   const cc11=
   <div className="card-cover relative">
-  <div className={`${bg} relative w-full h-full z-10 border-[2px] solid border-black rounded-[5px]`}>
+  <div className={`${bg} relative z-10 border-[2px] solid border-black rounded-[5px]`}>
     {children}
   </div>
   <div className="bg-[#FFDD60] absolute w-full h-[2rem] right-[-0.313rem] top-[0.313rem] border-[2px] solid border-black rounded-[5px]"></div>
