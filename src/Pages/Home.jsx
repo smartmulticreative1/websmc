@@ -13,6 +13,7 @@ import starTesti from '../assets/img/star-testi.svg'
 import devCard from '../assets/img/dev-card.svg'
 import digCard from '../assets/img/dig-card.svg'
 import hpDig from '../assets/img/hp-dig.svg'
+import textHome from '../assets/img/text-home.svg'
 import TextAnimation from '../Components/TextAnimation/TextAnimation'
 import {Helmet, HelmetProvider } from 'react-helmet-async'
 import CardCover from '../Components/CardCover/CardCover'
@@ -62,8 +63,9 @@ function Home() {
           <div className="home-header-content_wrapper xl:pt-[3.125rem] xl:pb-[5.25rem] xl:ps-[4.375rem] overflow-hidden">
             <div className="home-header_content text-color-alternate flex flex-col justify-center gap-[3.75rem]">
               <div className="home-header-detail_content flex flex-col gap-[1.875rem]">
-                <div className="home-header_title sm:max-w-[29.188rem] max-w-[19.188rem] sm:h-[21.125rem] h-[15.125rem] pe-[1rem] sm:scale-100 scale-[.8] sm:translate-x-0 translate-x-[-1.5rem]">
-                  <div>
+                <div className="home-header_title sm:max-w-[29.188rem] sm:h-[21.125rem] pe-[1rem] sm:translate-x-0 w-full">
+                  <img src={textHome} alt="" className='w-full sm:hidden block' />
+                  <div className='hidden sm:block'>
                     <h2 className='xl:leading-[6.125rem] leading-normal sm:text-[4.5rem] text-[3rem]'>The Best way to grow your</h2>
                     <div className="sm:translate-x-[12rem] sm:translate-y-[-5rem] translate-y-[-4rem] translate-x-[8rem] flex flex-nowrap">
                       <div className="relative rotate-[-1.65deg]">
