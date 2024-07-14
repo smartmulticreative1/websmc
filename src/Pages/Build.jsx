@@ -9,6 +9,9 @@ import devCard from '../assets/images/dev-card.svg'
 import digCard from '../assets/images/dig-card.svg'
 import hpDig from '../assets/images/hp-dig.svg'
 import work1 from '../assets/images/work-1.svg'
+import quoteIcon from '../assets/images/quote-icon.svg'
+import human from '../assets/images/human.png'
+import starTesti from '../assets/images/star-testi.svg'
 import Button from '../Components/Button/Button'
 import TextAnimation from '../Components/TextAnimation/TextAnimation'
 import CardCover from '../Components/CardCover/CardCover'
@@ -204,6 +207,85 @@ function Build() {
                 </div>                
               </div>
             </Carousel>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <section className="section-testimonial">
+      <div className="xl:container xl:px-0 px-4 mx-auto">
+        <div className="testimonial-content_wrapper text-black w-full max-w-[59.313rem] mx-auto flex flex-col gap-[2.813rem] py-[4.375rem]">
+          <div className="testimonial-start_content flex flex-col gap-[1.125rem] text-center">
+            <p className='text-[1.5rem] font-bold'>Testimonial</p>
+            <h3>What our clients love in working with us</h3>
+          </div>
+          <div className="testimonial-end_content flex flex-col gap-[2.938rem]">
+            <div className="testimonial-card_wrapper flex flex-col gap-[2.813rem]">
+              <CardCover selectCard='cc4'>
+                  <div className="card-testimonial flex flex-col gap-[1.875rem]">
+                      <div className="icon-quote"><img src={quoteIcon} alt="" /></div>
+                      <p className='font-bold sm:text-start text-center'>“Smart Multi Creative is very organized and very easy to work with and very friendly so it is easy to understand. very easy and fast steps in the work stage.”</p>
+                      <div className="footer-testimonial flex sm:justify-between justify-center flex-wrap gap-[1.875rem]">
+                          <div className="client-testimonial flex flex-nowrap gap-[1.5rem]">
+                              <div className="client-testimonial-img w-[50px] h-[50px] overflow-hidden"><img src={human} alt="" className='w-[50px] h-[50px]' /></div>
+                              <div className="client-testimonial-detail flex flex-col gap-[0.313rem]">
+                                  <h6 className='m-0'>Marc Andre</h6>
+                                  <span className='text-gray-400 text-[12px]'>CEO WARUNG PINTAR</span>
+                              </div>
+                          </div>
+                          <div className="client-feedback flex sm:flex-row flex-col gap-[0.313rem] items-center">
+                              <h4 className="m-0">5.0</h4>
+                              <div className="star-point flex flex-nowrap items-center">
+                                  <img src={starTesti} alt="" />
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </CardCover>
+              <CardCover selectCard='cc4'>
+                  <div className="card-testimonial flex flex-col gap-[1.875rem]">
+                      <div className="icon-quote"><img src={quoteIcon} alt="" /></div>
+                      <p className='font-bold sm:text-start text-center'>“Smart Multi Creative is very organized and very easy to work with and very friendly so it is easy to understand. very easy and fast steps in the work stage.”</p>
+                      <div className="footer-testimonial flex sm:justify-between justify-center flex-wrap gap-[1.875rem]">
+                          <div className="client-testimonial flex flex-nowrap gap-[1.5rem]">
+                              <div className="client-testimonial-img w-[50px] h-[50px] overflow-hidden"><img src={human} alt="" className='w-[50px] h-[50px]' /></div>
+                              <div className="client-testimonial-detail flex flex-col gap-[0.313rem]">
+                                  <h6 className='m-0'>Marc Andre</h6>
+                                  <span className='text-gray-400 text-[12px]'>CEO WARUNG PINTAR</span>
+                              </div>
+                          </div>
+                          <div className="client-feedback flex sm:flex-row flex-col gap-[0.313rem] items-center">
+                              <h4 className="m-0">5.0</h4>
+                              <div className="star-point flex flex-nowrap items-center">
+                                  <img src={starTesti} alt="" />
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </CardCover>
+              <CardCover selectCard='cc4'>
+                  <div className="card-testimonial flex flex-col gap-[1.875rem]">
+                      <div className="icon-quote"><img src={quoteIcon} alt="" /></div>
+                      <p className='font-bold sm:text-start text-center'>“Smart Multi Creative is very organized and very easy to work with and very friendly so it is easy to understand. very easy and fast steps in the work stage.”</p>
+                      <div className="footer-testimonial flex sm:justify-between justify-center flex-wrap gap-[1.875rem]">
+                          <div className="client-testimonial flex flex-nowrap gap-[1.5rem]">
+                              <div className="client-testimonial-img w-[50px] h-[50px] overflow-hidden"><img src={human} alt="" className='w-[50px] h-[50px]' /></div>
+                              <div className="client-testimonial-detail flex flex-col gap-[0.313rem]">
+                                  <h6 className='m-0'>Marc Andre</h6>
+                                  <span className='text-gray-400 text-[12px]'>CEO WARUNG PINTAR</span>
+                              </div>
+                          </div>
+                          <div className="client-feedback flex sm:flex-row flex-col gap-[0.313rem] items-center">
+                              <h4 className="m-0">5.0</h4>
+                              <div className="star-point flex flex-nowrap items-center">
+                                  <img src={starTesti} alt="" />
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </CardCover>
+            </div>
+            <div className="cta-testimonial-card_wrapper text-center"><Button btn="btn1" to='#' className='btn-primary-smc'>show more review</Button></div>
           </div>
         </div>
       </div>
