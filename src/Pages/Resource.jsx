@@ -74,8 +74,8 @@ function Resource() {
     }
   ];
 
-    // our section case studies content
-  const caseStudies = [
+   // our section case studies content
+   const caseStudies = [
     {
       title: 'How EVHUB can supervise the rented car vehicle 1',
       description: 'A case study of how EVHUB can keep an eye on the rented car vehicle so as to minimize the damage that occurs while in the rental stage by customers',
@@ -106,9 +106,10 @@ function Resource() {
       description: 'A case study of how EVHUB can keep an eye on the rented car vehicle so as to minimize the damage that occurs while in the rental stage by customers',
       imgSrc: '',
     },
+    // Add more cards as needed
   ];
-
-  const [currentPage, setCurrentPage] = useState(1);
+  
+   const [currentPage, setCurrentPage] = useState(1);
   const cardsPerPage = 3;
 
   // Calculate total pages
@@ -123,12 +124,16 @@ function Resource() {
     setCurrentPage(pageNumber);
   };
 
-  const handlePrev = () => {
-    if (currentPage > 1) setCurrentPage(currentPage - 1);
+  const handleNext = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
   };
 
-  const handleNext = () => {
-    if (currentPage < totalPages) setCurrentPage(currentPage + 1);
+  const handlePrev = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
   };
 
   return (
@@ -196,8 +201,8 @@ function Resource() {
           <div className="case-studies-end_content flex flex-col gap-[2.5rem]">
             {currentCards.map((card, index) => (
               <div
+                className="card-case-studies_items flex gap-[3.938rem]"
                 key={index}
-                className={`card-case-studies_items flex gap-[3.938rem] ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
               >
                 {index % 2 === 0 ? (
                   <>
@@ -229,7 +234,7 @@ function Resource() {
               </div>
             ))}
             <div className="card-case-studies_pagination mt-[1.25rem] flex flex-nowrap gap-[4.375rem] mx-auto items-center">
-              <button onClick={handlePrev} disabled={currentPage === 1}>Previous</button>
+              <button onClick={handlePrev} disabled={currentPage === 1} className="pagination-button">Prev</button>
               {Array.from({ length: totalPages }, (_, index) => (
                 <button
                   key={index}
@@ -239,7 +244,7 @@ function Resource() {
                   {index + 1}
                 </button>
               ))}
-              <button onClick={handleNext} disabled={currentPage === totalPages}>Next</button>
+              <button onClick={handleNext} disabled={currentPage === totalPages} className="pagination-button">Next</button>
             </div>
           </div>
         </div>
