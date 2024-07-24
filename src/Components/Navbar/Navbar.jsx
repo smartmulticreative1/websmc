@@ -64,7 +64,7 @@ const Navbar = ({ns}) => {
                 <div onClick={() => setOpen(!open)} className={`navbar_mid flex gap-[2.5rem] lg:static fixed top-0 left-0 right-0 h-[100%] ${open ? 'flex' : 'hidden'} lg:flex flex-col lg:flex-row lg:bg-transparent bg-[#00000050] transition-[all_ease_1s] z-50`}>
                     {n}
                     <div className="nav_cta">
-                    <Button btn='btn1' to="/" className="btn-primary-smc hidden lg:flex">Get In Touch</Button>
+                    <Button btn='btn1' to="/get-in-touch" className="btn-primary-smc hidden lg:flex">Get In Touch</Button>
                     </div>
                 </div>
                 <div className="navbar_end btn-nav cursor-pointer px-1 flex lg:hidden z-20" onClick={() => setOpen(!open)}>
