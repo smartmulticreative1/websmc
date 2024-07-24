@@ -58,7 +58,7 @@ function Home() {
 
         <Navbar ns='nv1'/>
         
-     <section className="section-home_header w-full background-primary xl:px-0 px-4 xl:bg-[url('./src/assets/img/bg-header_home.svg')] bg-cover bg-no-repeat lg:bg-center 2xl:bg-top">
+     <section className="section-home_header w-full background-primary xl:px-0 px-4 xl:bg-[url('../assets/img/bg-header_home.svg')] bg-cover bg-no-repeat lg:bg-center 2xl:bg-top">
         <div className="xl:container mx-auto">
           <div className="home-header-content_wrapper xl:pt-[3.125rem] xl:pb-[5.25rem] xl:ps-[4.375rem] overflow-hidden">
             <div className="home-header_content text-color-alternate flex flex-col justify-center gap-[3.75rem]">
