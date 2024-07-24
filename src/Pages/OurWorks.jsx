@@ -52,7 +52,7 @@ const showMenu2 = () => {
                 <div className="grid lg:grid-cols-2 grid-rows-1 gap-4">
                   <div className="detail-hero-work">
                     <CardCover selectCard="cc10">
-                      <div className="flex flex-col gap-4">
+                      <div className="flex flex-col gap-4 text-color-alternate">
                         <h1 className='md:text-[76px] text-[2.5rem]'>Projects we have done</h1>
                         <div className="w-full h-[10px] rounded-[100px] bg-white"></div>
                         <div className="flex md:flex-nowrap flex-wrap justify-between gap-4">

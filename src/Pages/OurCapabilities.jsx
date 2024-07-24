@@ -36,34 +36,37 @@ function OurCapabilities() {
 
       {/* header */}
 
-      <div id="header-our-capabilities" className="relative bg-smc-1 lg:bg-right lg:bg-[url('./assets/img/bg-our-capabilities.svg')] bg-cover bg-no-repeat">
-            
-            {/* Hero Section */}
-            <div className="lg:min-h-[800px] xl:px-[4.3rem] px-[1rem] py-[50px] mx-auto xl:container" id="section-hero-our-capabilities">
-                <div className="flex flex-col gap-4 text-center lg:text-start">
-                    <h2 className='text-[1.8rem] sm:text-[4.5rem] relative'>
-                      Guaranteed <br /> <span className='text-[1.8rem] sm:text-[4.5rem] relative after:absolute after:w-full sm:after:h-[10px] after:h-[5px] after:bg-[white] after:rounded-[100px] after:content-[""] after:left-0 after:bottom-[-.3rem] sm:after:bottom-[-.8rem]'>ability</span> with <br /> <span className='text-[1.8rem] sm:text-[4.5rem] relative after:absolute after:w-full sm:after:h-[10px] after:h-[5px] after:bg-[white] after:rounded-[100px] after:content-[""] after:left-0 after:bottom-[-.3rem] sm:after:bottom-[-.8rem]'>experienced</span> people
-                    </h2>
-                    <p className='w-full lg:max-w-[569px] font-bold mb-10'>We will help you find solutions to your problems. We have years of experience in the IT and branding industry.</p>
-                </div>
-            </div>
-
-            {/* cta hero */}
-            <div className="cta-hero-our-cap absolute bottom-[3rem] w-full text-center flex flex-col justify-center">
-              <h5>Check our capability</h5>
-              <div className="w-auto mx-auto">
-                <a href="#section-our-capabilities"><img src={iconCursor} alt="" className='animate-bounce' /></a>
+      <section className="section-our-cap_header relative w-full background-primary xl:bg-[url('../src/assets/img/bg-our-capabilities.svg')] bg-cover bg-no-repeat">
+        <div className="xl:container mx-auto xl:px-0 px-4">
+          <div className="our-cap-header-content_wrapper xl:pt-[5.625rem] xl:pb-[12.5rem] sm:py-[5rem] pt-[2.5rem] pb-[4rem] overflow-hidden">
+            <div className="our-cap-header-start_content xl:px-[4.375rem] ">
+              <div className="flex flex-col gap-[1.25rem] text-color-alternate text-center lg:text-start">
+                  <h2 className='text-[2rem] sm:text-[4.5rem] sm:leading-[6rem] leading-[3rem] relative'>
+                    Guaranteed <br /> <span className='text-[2rem] sm:text-[4.5rem] relative after:absolute after:w-full sm:after:h-[10px] after:h-[5px] after:bg-[white] after:rounded-[100px] after:content-[""] after:left-0 after:bottom-[-.3rem] sm:after:bottom-[-.8rem]'>ability</span> with <br /> <span className='text-[2rem] sm:text-[4.5rem] relative after:absolute after:w-full sm:after:h-[10px] after:h-[5px] after:bg-[white] after:rounded-[100px] after:content-[""] after:left-0 after:bottom-[-.3rem] sm:after:bottom-[-.8rem]'>experienced</span> people
+                  </h2>
+                  <p className='w-full xl:max-w-[569px] font-semibold sm:text-[1.25rem] text-[0.75rem]'>We will help you find solutions to your problems. We have years of experience in the IT and branding industry.</p>
               </div>
             </div>
-            {/* animation text */}
-
-            <TextAnimation 
-            textItems={listText}
-            boxClass="animation-text-box-1"
-            ts="c1"
-            />
-
-      </div>
+            <div className="our-cap-header-end_content absolute bottom-[3rem] w-full">
+              <div className="cta-hero-our-cap text-color-alternate text-center flex flex-col gap-[1rem] justify-center lg:m-0 pe-[2rem]">
+                <h5 className='sm:text-[1.25rem] text-[0.75rem]'>Check our capability</h5>
+                <div className="w-auto mx-auto">
+                  <a href="#section-our-capabilities"><img src={iconCursor} alt="" className='animate-bounce' /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='section-text-animation w-full'>
+            <div className="text-animation_wrapper">
+              <TextAnimation 
+                textItems={listText}
+                boxClass="animation-text-box-1"
+                ts="c1"
+                />
+            </div>
+        </div>
+      </section>
 
       {/* section our capabilities */}
       <div className="xl:px-[4.3rem] px-[1rem] py-[50px] mx-auto xl:container" id="section-our-capabilities">
