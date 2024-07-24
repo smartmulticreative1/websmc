@@ -1,0 +1,33 @@
+.btn-smc{display: inline-flex;}
+.btn-smc span{
+    display: inline-flex;
+    /* padding: 0.688rem 0.938rem; */
+    border-radius: 0.313rem;
+    /* font-size: 1.25rem; */
+    font-weight: 700;
+    flex-shrink: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+    text-decoration-line: none;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    text-wrap: nowrap;
+}
+.btn-primary-smc{
+    color: #000;
+    border-top:2px solid #000;
+    border-left:2px solid #000;
+    border-right:0.313rem solid #000;
+    border-bottom:7px solid #000;
+    border-radius:0.313rem;
+    background-color: #000;
+}
+.btn-primary-smc span{background-color: #FCCF08;}
+.btn-primary-smc-white span{background-color: #fff;}
