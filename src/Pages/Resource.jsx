@@ -24,6 +24,12 @@ import iconRscCard11 from '../assets/img/icon-rsc-card-11.svg'
 import iconRscCard12 from '../assets/img/icon-rsc-card-12.svg'
 import iconRscCard13 from '../assets/img/icon-rsc-card-13.svg'
 import iconRscCard14 from '../assets/img/icon-rsc-card-14.svg'
+import ourBlogThum1 from '../assets/img/thumb-rsc-1.png'
+import ourBlogThum2 from '../assets/img/thumb-rsc-2.png'
+import ourBlogThum3 from '../assets/img/thumb-rsc-3.png'
+import caseImg1 from '../assets/img/case-rsc-1.png'
+import caseImg2 from '../assets/img/case-rsc-2.png'
+import caseImg3 from '../assets/img/case-rsc-3.png'
 
 
 function Resource() {
@@ -40,56 +46,56 @@ function Resource() {
       details: 'Detailed description of the blog post.',
       category: 'Custom Solution',
       date: '12 March',
-      image: '/assets/img/thumb-rsc-1.png',
+      image:ourBlogThum1,
     },
     {
       title: 'A useful application to assist users in carrying out sports with tracking features during exercise.',
       details: 'Exploring creative solutions for businesses.',
       category: 'Creative Solution',
       date: '15 April',
-      image: '/assets/img/thumb-rsc-2.png',
+      image:ourBlogThum2,
     },
     {
       title: 'A useful application to assist users in carrying out sports with tracking features during exercise.',
       details: 'Comprehensive ERP development services.',
       category: 'Custom Solution',
       date: '22 May',
-      image: '/assets/img/thumb-rsc-3.png',
+      image:ourBlogThum3,
     },
     {
       title: 'A useful application to assist users in carrying out sports with tracking features during exercise.',
       details: 'Innovative trends in web design.',
       category: 'Creative Solution',
       date: '30 June',
-      image: '/assets/img/thumb-rsc-1.png',
+      image:ourBlogThum2,
     },
     {
       title: 'A useful application to assist users in carrying out sports with tracking features during exercise.',
       details: 'How AI and automation are transforming businesses.',
       category: 'Custom Solution',
       date: '5 July',
-      image: '/assets/img/thumb-rsc-2.png',
+      image:ourBlogThum3,
     },
     {
       title: 'A useful application to assist users in carrying out sports with tracking features during exercise.',
       details: 'Effective strategies for digital marketing.',
       category: 'Creative Solution',
       date: '12 August',
-      image: '/assets/img/thumb-rsc-3.png',
+      image:ourBlogThum1,
     },
     {
       title: 'A useful application to assist users in carrying out sports with tracking features during exercise.',
       details: 'Exploring advanced solutions for ERP systems.',
       category: 'Custom Solution',
       date: '19 September',
-      image: '/assets/img/thumb-rsc-1.png',
+      image:ourBlogThum3,
     },
     {
       title: 'A useful application to assist users in carrying out sports with tracking features during exercise.',
       details: 'Creating a strong brand identity.',
       category: 'Creative Solution',
       date: '25 October',
-      image: '/assets/img/thumb-rsc-2.png',
+      image:ourBlogThum2,
     }
   ];
 
@@ -98,32 +104,32 @@ function Resource() {
     {
       title: 'How EVHUB can supervise the rented car vehicle 1',
       description: 'A case study of how EVHUB can keep an eye on the rented car vehicle so as to minimize the damage that occurs while in the rental stage by customers',
-      imgSrc: '/assets/img/case-rsc-1.png',
+      imgSrc: caseImg1,
     },
     {
       title: 'How EVHUB can supervise the rented car vehicle 2',
       description: 'A case study of how EVHUB can keep an eye on the rented car vehicle so as to minimize the damage that occurs while in the rental stage by customers',
-      imgSrc: '/assets/img/case-rsc-2.png',
+      imgSrc: caseImg2,
     },
     {
       title: 'How EVHUB can supervise the rented car vehicle 3',
       description: 'A case study of how EVHUB can keep an eye on the rented car vehicle so as to minimize the damage that occurs while in the rental stage by customers',
-      imgSrc: '/assets/img/case-rsc-3.png',
+      imgSrc: caseImg3,
     },
     {
       title: 'How EVHUB can supervise the rented car vehicle 4',
       description: 'A case study of how EVHUB can keep an eye on the rented car vehicle so as to minimize the damage that occurs while in the rental stage by customers',
-      imgSrc: '/assets/img/case-rsc-2.png',
+      imgSrc: caseImg2,
     },
     {
       title: 'How EVHUB can supervise the rented car vehicle 5',
       description: 'A case study of how EVHUB can keep an eye on the rented car vehicle so as to minimize the damage that occurs while in the rental stage by customers',
-      imgSrc: '/assets/img/case-rsc-1.png',
+      imgSrc: caseImg3,
     },
     {
       title: 'How EVHUB can supervise the rented car vehicle 6',
       description: 'A case study of how EVHUB can keep an eye on the rented car vehicle so as to minimize the damage that occurs while in the rental stage by customers',
-      imgSrc: '/assets/img/case-rsc-3.png',
+      imgSrc: caseImg1,
     },
     // Add more cards as needed
   ];
