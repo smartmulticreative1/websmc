@@ -118,6 +118,22 @@ function CardCover({selectCard,bg,children,titleCard,textImg}) {
   </div>
   ;
 
+  const cc12=
+  <div className="card-cover relative">
+  <div className={`${bg} relative w-full h-full z-10 overflow-hidden border-[5px] solid border-black rounded-[1rem]`}>
+  <div className="card-topbar bg-[#AFB5FF] border-b-[5px] border-black">
+            <div className="circle flex flex-none">
+              <span className="bg-red-500 border-black solid border-[2px] rounded-full m-[14px_10px] p-3"></span>
+              <span className="bg-yellow-500 border-black solid border-[2px] rounded-full m-[14px_10px] p-3"></span>
+              <span className="bg-green-500 border-black solid border-[2px] rounded-full m-[14px_10px] p-3"></span>
+            </div>
+          </div>
+    {children}
+  </div>
+  <div className="bg-[#FFDD60] absolute w-full h-full right-[-1rem] top-[1rem] border-[5px] solid border-black rounded-[1rem]"></div>
+</div>
+  ;
+
   let ccs;
 
   if (selectCard === 'cc1') {
@@ -142,6 +158,8 @@ function CardCover({selectCard,bg,children,titleCard,textImg}) {
     ccs=cc10;
   }else if (selectCard === 'cc11'){
     ccs=cc11;
+  }else if (selectCard === 'cc12'){
+    ccs=cc12;
   }
   return (
     <>

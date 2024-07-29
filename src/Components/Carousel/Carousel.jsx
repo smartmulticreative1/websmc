@@ -122,6 +122,30 @@ const CustomNextArrow = (props) => {
   </div>
   </>;
 
+const ctesti= <>
+<Swiper
+navigation={{
+  nextEl: '.custom-next',
+  prevEl: '.custom-prev',
+}}
+modules={[Navigation]}
+loop={true}
+className="mySwiper xl:w-[85%] w-full md:min-h-[34.188rem]"
+>
+{React.Children.map(children, (child, index) => (
+      <SwiperSlide key={index}>{child}</SwiperSlide>
+    ))}
+  </Swiper>
+<div className="custom-navigation xl:px-4 px-0 w-full h-0 flex gap-[1rem] lg:justify-between justify-center lg:translate-y-[-30rem]">
+  <div className="cursor-pointer custom-prev">
+    <img src={prevImg} alt="Previous" />
+  </div>
+  <div className="cursor-pointer custom-next">
+    <img src={nextImg} alt="Next" />
+  </div>
+</div>
+</>;
+
   let n;
 
         if (cs === 'c1') {
@@ -130,8 +154,10 @@ const CustomNextArrow = (props) => {
           n=c2;
         }else if (cs === 'cwork') {
           n=cwork;
+        }else if (cs === 'ctesti') {
+          n=ctesti;
         }
-
+        
   return (
     <>
     {n}
