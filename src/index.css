@@ -112,3 +112,45 @@ a:hover{color: #00173f;}
 /* hover nav */
 .hover\:bg-inherit:hover{background-color: unset !important;}
 :where(.menu li:not(.menu-title, .disabled) > :not(ul, details, .menu-title)):not(summary, .active, .btn).focus, :where(.menu li:not(.menu-title, .disabled) > :not(ul, details, .menu-title)):not(summary, .active, .btn):focus, :where(.menu li:not(.menu-title, .disabled) > :not(ul, details, .menu-title)):is(summary):not(.active, .btn):focus-visible, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(summary, .active, .btn).focus, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(summary, .active, .btn):focus, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):is(summary):not(.active, .btn):focus-visible{background-color: unset !important;}
+
+
+/* btn tab, cover card */
+.cover-card,.btn-tab{
+    display: inline-flex;
+    padding: 0.688rem 0.938rem;
+    border-radius: 0.313rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+    text-decoration-line: none;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    text-wrap: nowrap;
+    color: #000;
+    border-top:2px solid #000;
+    border-left:2px solid #000;
+    border-right:0.313rem solid #000;
+    border-bottom:7px solid #000;
+    border-radius:0.313rem;
+}
+.btn-primary-tab{background-color: #FCCF08;}
+.cover-card,.btn-primary-tab-white{background-color: #fff;}
+
+:focus-visible{outline: unset;}
+
+
+/* faq */
+
+.qna_items .btn-faq{transition: all linear .3s;}
+.qna_items-active .btn-faq{
+  transition: all linear .3s;
+  rotate: 90deg;
+}
