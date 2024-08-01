@@ -62,7 +62,7 @@ const OurBlog = ({ blogs }) => {
   return (
     <>
       <div className="our-blog-end_content flex flex-col gap-[3.125rem]">
-        <div className="nav-tab_our-blog flex gap-[1.875rem] mx-auto">
+        <div className="nav-tab_our-blog flex md:flex-row flex-col gap-[1.875rem] mx-auto">
           <button
             onClick={() => handleCategoryChange('ALL BLOG')}
             className={activeCategory === 'ALL BLOG' ? 'btn-tab btn-primary-tab' : 'btn-tab btn-primary-tab-white'}
