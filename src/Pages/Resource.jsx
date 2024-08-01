@@ -181,7 +181,7 @@ function Resource() {
           </div>
           <div className="resource-end_content flex flex-col gap-[1.875rem]">
             <p className='text-[1.25rem]'>Explore Features</p>
-            <div className="cta-resource_header flex justify-center gap-[1.875rem]">
+            <div className="cta-resource_header flex md:flex-row flex-col justify-center gap-[1.875rem]">
               <button className='btn-tab btn-primary-tab btn-primary-tab-white'><span>CASE STUDIES</span></button>
               <button className='btn-tab btn-primary-tab btn-primary-tab-white'><span>BLOG</span></button>
               <button className='btn-tab btn-primary-tab btn-primary-tab-white'><span>GUIDE AND BOOK</span></button>
@@ -205,7 +205,7 @@ function Resource() {
       <div className="xl:container mx-auto">
         <div className="our-blog-content_wrapper flex flex-col gap-[3.75rem] mx-auto w-full max-w-[74.313rem] p-[4.063rem_0_3.75rem]">
           <div className="our-blog-start_content flex flex-col gap-[0.938rem]">
-            <div className="title-our-blog_section flex items-center gap-[1.188rem]">
+            <div className="title-our-blog_section flex md:flex-row flex-col items-center gap-[1.188rem]">
               <h2>Blog -</h2>
               <h3>Inspiring Minds, One Post at a Time</h3>
             </div>
