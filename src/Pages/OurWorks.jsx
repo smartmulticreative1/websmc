@@ -10,6 +10,7 @@ import arrowRight from '../assets/img/arrow-right.svg'
 import craftCard3 from '../assets/img/craft-card-3.png'
 import iconSide from '../assets/img/icon-side-menu.svg'
 import CardCover from '../Components/CardCover/CardCover'
+import CountUp from 'react-countup'
 
 
 
@@ -56,7 +57,7 @@ const showMenu2 = () => {
                         <h1 className='md:text-[76px] text-[2.5rem]'>Projects we have done</h1>
                         <div className="w-full h-[10px] rounded-[100px] bg-white"></div>
                         <div className="flex md:flex-nowrap flex-wrap justify-between gap-4">
-                          <h2 className="count-work flex md:text-[2.5rem] text-[1.5rem]"><div>100</div> +</h2>
+                          <h2 className="count-work flex items-center md:text-[2.5rem] text-[1.5rem]"><CountUp start={0} end={100} duration={2.5} /> +</h2>
                           <div className='mx-auto'><h3 className='md:text-[1.8rem] text-[1.2rem]'>Project Done</h3></div>
                           <div className="flex flex-col justify-center">
                           <Button btn="btn1" to='#' className='btn-primary-smc'>See Project</Button>
